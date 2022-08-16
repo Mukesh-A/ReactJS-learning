@@ -1,6 +1,14 @@
 import React from 'react'
 
-const Greet = ()=><h1>Mukesh</h1>
+
+//props are immutable i.e
+// X eg: props.name = "mukesh" X
+const Greet = (props)=>{
+    return <>
+    <h1>{props.name}</h1>
+    {props.children}
+    </>
+}
 
 // this is default export .If we want to change the name from greet to Example in the App.js  we can do it without changing the Greet word here.
 
