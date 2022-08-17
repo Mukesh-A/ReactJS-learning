@@ -10,14 +10,34 @@ import ParentComponent from './components/ParentComponent';
 import ConditionalRendering from './components/ConditionalRendering';
 import ListRendering from './components/ListRendering';
 import Stylesheet from './components/Stylesheet';
+import Inline from './components/Inline';
+import Forms from './components/Forms';
+import LifecycleA from './components/LifecycleA';
+import FragmentDemo from './components/FragmentDemo';
+import PureComp from './components/PureComp';
+import ParentComp from './components/ParentComp';
 
 
 function App() {
   return (
     <div className="App">
 
+      {/* Purecomponent */}
+      {/* <ParentComp/> */}
+
+      {/* Fragments */}
+      {/* <FragmentDemo/> */}
+
+      {/* Lifecycle */}
+      {/* <LifecycleA/> */}
+
+    {/* Form */}
+    {/* <Forms/> */}
+
+
       {/* Styling and basic css */}
-    <Stylesheet primary={true} />
+    {/* <Stylesheet primary={true} /> */}
+    {/* <Inline/> */}
 
       {/* //ListRendering */}
       {/* <ListRendering/> */}
