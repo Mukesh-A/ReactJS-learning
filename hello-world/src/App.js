@@ -16,11 +16,20 @@ import LifecycleA from './components/LifecycleA';
 import FragmentDemo from './components/FragmentDemo';
 import PureComp from './components/PureComp';
 import ParentComp from './components/ParentComp';
+import PortalDemo from './components/PortalDemo';
+import errorHandalingMethods from './components/errorHandalingMethods';
 
-
+ 
 function App() {
   return (
     <div className="App">
+
+      {/* errorsHandalingMethods */}
+      {/* <errorHandalingMethods heroName="Batman"/> */}
+      <errorHandalingMethods heroName="Batman" />
+
+      {/* PortalDemo */}
+      {/* <PortalDemo/> */}
 
       {/* Purecomponent */}
       {/* <ParentComp/> */}
