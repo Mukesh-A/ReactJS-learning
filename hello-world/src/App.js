@@ -17,16 +17,29 @@ import FragmentDemo from './components/FragmentDemo';
 import PureComp from './components/PureComp';
 import ParentComp from './components/ParentComp';
 import PortalDemo from './components/PortalDemo';
-import errorHandalingMethods from './components/errorHandalingMethods';
+import Hero from './components/Hero';
+import HigherOrder from './components/HigherOrder';
+import { HigherOrdertwo } from './components/HigherOrdertwo';
+import UpdatedComponent from './components/HigherOrderThree';
+
 
  
 function App() {
   return (
     <div className="App">
 
+      {/* HigherOrder
+
+      <HigherOrder/>
+      <HigherOrdertwo/> */}
+
+      <UpdatedComponent/>
+
       {/* errorsHandalingMethods */}
-      {/* <errorHandalingMethods heroName="Batman"/> */}
-      <errorHandalingMethods heroName="Batman" />
+      
+      {/* <Hero heroName="superman"/>
+      <Hero heroName="batman"/>
+      <Hero heroName="joker"/> */}
 
       {/* PortalDemo */}
       {/* <PortalDemo/> */}
