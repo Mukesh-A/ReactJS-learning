@@ -19,8 +19,10 @@ import ParentComp from './components/ParentComp';
 import PortalDemo from './components/PortalDemo';
 import Hero from './components/Hero';
 import HigherOrder from './components/HigherOrder';
-import { HigherOrdertwo } from './components/HigherOrdertwo';
+import  HigherOrdertwo  from './components/HigherOrdertwo';
 import UpdatedComponent from './components/HigherOrderThree';
+import RenderProps from './components/RenderProps';
+import ContextA from './components/ContextA';
 
 
  
@@ -28,12 +30,28 @@ function App() {
   return (
     <div className="App">
 
-      {/* HigherOrder
+      {/* React Context */}
 
-      <HigherOrder/>
-      <HigherOrdertwo/> */}
+      <ContextA/>
 
-      <UpdatedComponent/>
+      {/* Render Props */}
+      {/* // we can pass function also in props */}
+      {/* <RenderProps render={(isLoggedIn)=> isLoggedIn ? "Mukesh" : "Guest"}/> */}
+
+      {/* <RenderProps render={(count, incrementCount) =>(
+        <HigherOrder count={count} incrementCount= {incrementCount} />
+      )}/>
+
+       <RenderProps render={(count, incrementCount) =>(
+        <HigherOrdertwo count={count} incrementCount= {incrementCount} />
+      )}/> */}
+
+      {/* HigherOrder */}
+
+      {/* <HigherOrder/>
+      <HigherOrdertwo/>  */}
+
+      {/* <UpdatedComponent/> */}
 
       {/* errorsHandalingMethods */}
       

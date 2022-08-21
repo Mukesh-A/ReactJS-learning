@@ -16,13 +16,13 @@ const UpdatedComponent = (OriginalComponent) =>{
           incrementCount = ()=>{
             this.setState(prevState => {
               return{
-                count:prevState.count + 1
+                count : prevState.count + 1
               }
             })
           }
         render(){
             return (
-            <OriginalComponent count="this.state.count"/>
+            <OriginalComponent count={this.state.count} incrementCount={this.incrementCount}/>
         )}
     }
     return NewComponent

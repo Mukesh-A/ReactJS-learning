@@ -1,16 +1,13 @@
 import React, { Component } from 'react'
-import UpdatedComponent
-from './HigherOrderThree'
+import UpdatedComponent from './HigherOrderThree'
 
-export class HigherOrdertwo extends Component {
-
-  
+class HigherOrdertwo extends Component {
 
   render() {
-    const { count } = this.state;
+    const { count, incrementCount } = this.props;
     return (
       <div>
-        <h2 onMouseOver={this.incrementCount}>{this.props.name}Hover {count}</h2>
+        <h2 onMouseOver={incrementCount}>Hover {count}</h2>
       </div>
     )
   }
