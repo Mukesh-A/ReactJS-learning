@@ -23,6 +23,8 @@ import  HigherOrdertwo  from './components/HigherOrdertwo';
 import UpdatedComponent from './components/HigherOrderThree';
 import RenderProps from './components/RenderProps';
 import ContextA from './components/ContextA';
+import { UserProvider } from './components/userContext';
+import ContextC from './components/ContextC';
 
 
  
@@ -32,7 +34,11 @@ function App() {
 
       {/* React Context */}
 
-      <ContextA/>
+      {/* <ContextA/> */}
+      {/* //STEP 2 */}
+      <UserProvider value="Mukesh">
+        <ContextA/>
+      </UserProvider>
 
       {/* Render Props */}
       {/* // we can pass function also in props */}

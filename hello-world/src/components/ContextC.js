@@ -1,10 +1,15 @@
 import React from 'react'
+import { UserConsumer } from './userContext'
 
 function ContextC() {
   return (
-    <div>
-      Context C
-    </div>
+ <UserConsumer>
+  {
+    (usename)=>{
+      return <div>hello {usename}</div>
+    }
+  }
+ </UserConsumer>
   )
 }
 
