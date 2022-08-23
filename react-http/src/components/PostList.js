@@ -10,7 +10,7 @@ import axios from 'axios'
       }
     }
 
-    componentDidMount(){
+    componentDidMount() {
         axios.get('https://jsonplaceholder.typicode.com/posts')
         .then(response=>{
             console.log(response)
@@ -25,6 +25,8 @@ import axios from 'axios'
     const {posts} = this.state
     return (
       <div>
+
+      
         {
             posts.length ?
             posts.map(post => <div key={post.id}>{post.title}</div>) :
