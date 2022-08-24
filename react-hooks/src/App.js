@@ -1,5 +1,6 @@
 import './App.css';
 import ClassCounter from './components/ClassCounter';
+import DataFetching from './components/DataFetching';
 import HookCounter from './components/HookCounter';
 import HookCounter2 from './components/HookCounter2';
 import HookCounterFour from './components/HookCounterFour';
@@ -10,8 +11,11 @@ function App() {
   return (
     <div className="App">
 
+      {/* useffect using axios */}
+      <DataFetching/>
+
     {/* UseEffect */}
-    <UseEffectOne/>
+    {/* <UseEffectOne/> */}
 
 
 
